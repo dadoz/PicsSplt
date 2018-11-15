@@ -18,13 +18,19 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:popupTheme="@style/AppTheme.PopupOverlay"/>
-
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main"/>
-
+    <com.application.sample.david.picssplt.views.PicCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_16"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:cardCornerRadius="10dp"
+            tools:context=".MainActivity">
+    </com.application.sample.david.picssplt.views.PicCardView>
     <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
